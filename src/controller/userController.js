@@ -73,7 +73,7 @@ const updatePassword = async (req, res) => {
     const result = await updatePasswordService(req);
     return res.status(200).json(result);
   } catch (error) {
-    console.log(error);
+    return res.status(200).json(result);
   }
 };
 module.exports = {
